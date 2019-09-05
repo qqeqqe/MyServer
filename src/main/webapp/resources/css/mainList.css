@@ -1,0 +1,465 @@
+.boxFrame{
+	position: absolute;
+	width: 100%; 
+	/* border: 1px solid red; */
+}
+
+.box1{
+	position: relative;
+	width: 100%; height: 355px;
+}
+
+.carousel-inner{
+	overflow:unset;
+	display: inline-block;
+
+}
+
+ul>li{
+	height: 23px;
+	width: 30px;
+	background-color: #bbb;
+	border-radius: 0%;
+	display: inline-block;
+}
+
+.box1-1{
+position: absolute;
+left: 4.2%;
+color: (255, 0, 0,.60);
+font-size: 50px; font-weight: 700;
+-webkit-animation: glow 1s ease-in-out infinite alternate;
+-moz-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 1s ease-in-out infinite alternate;
+}
+
+.box1-2{
+	z-index: 1;
+	position: absolute;
+	left: 71%;
+	width: 250px; height: 60px;
+	padding: 0px 10px;
+}
+
+.box1-5{
+	position: absolute;
+	left: 62%; top: 13%;
+	width: 330px; height: 230px;
+	z-index: 1;
+}
+
+.box1-6{
+	padding-left: 86%;
+	height: 10px;
+	opacity: 0.9;
+}
+
+.box1-7{
+	width: 100%; height: 175px;
+	background-color: rgb(255,255,255,0.9);
+}
+
+.box1-9{
+	float: left;
+	width: 120px;
+	height: 140px;
+}
+
+.box1-9a{
+	margin: 10px 5px 5px 10px;
+	width: 100px;
+	height: 110px;
+	border: 1px solid rgb(217,217,217,1)
+}
+
+.box1-9b{
+	position: absolute;
+	left: 85px;
+	transform: translate(0px,-25px);
+	cursor: pointer;
+}
+
+/*사진 수정 눌렀을대 나오는 효과들*/
+	.box1-9c {
+		height: 165%;
+		width: 275%;
+		display: none;
+		position: relative;
+		z-index: 2;
+		background-color: rgba(115,115,115, 0.9);
+		transform: translate(0px,60px);
+	}
+
+	/*컨탠츠 안 박스설정*/
+	.box1-9d{
+		border: 1px ghostwhite solid;
+		width: 102px;
+		height: 112px;
+		top: 12%;
+		position: relative;
+		left: 5%;
+		float: left;
+	}
+	
+	.box1-9e{
+		position: relative;
+		left: 10%; top: 10%
+	}
+
+	.box1-9f{
+		position: relative;
+		top: 22%; left: 17px;		
+	}
+	
+	/*컨탠츠 안에 확인버튼*/
+	.box1-9g {
+		text-decoration: none;
+		font-size: 16px;
+		transition: 0.3s;
+	}
+
+	/*X 버튼*/
+	.closebtn {
+		position: absolute;
+		right: 10px; top: -5px;
+		font-size: 30px;
+		z-index: 3;
+		text-decoration: none;
+		color: #ddd;
+	}
+
+	.closebtn:hover{
+		text-decoration: none;
+	}
+
+	@media screen and (max-height: 450px) {
+		.box1-9g {font-size: 20px}
+		.closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+		}
+	}
+
+	.box1-10{
+		float: left;
+		width: 205px;
+		height: 140px;
+		padding: 5px 0 0 5px;
+	}
+	
+	.box1-10a{
+	display: inline-block;
+	width: 130px;
+	}
+	
+	.box1-10b{
+	display: inline-block;
+	width: 60px;
+	border: 1px solid #bfbfbf;
+	cursor: pointer;
+	padding-left: 2px;
+	}
+	
+	.box1-10d{
+		width: 85px;
+		display: inline-block;
+	}
+	.box1-10e{
+		display: inline-block;
+		width: 108px;
+	}
+	
+	.box1-11{
+	padding-left: 9px;
+	}
+	
+	.box1-12, .box1-13, .box1-14{
+		border: #ff4da6 1px solid;
+		display: inline-block;
+		cursor: pointer;
+		width: 100px;
+		height: 22px;
+		text-align: center;
+	}
+	
+	.box1-12:hover, .box1-13:hover, .box1-14:hover{
+		text-decoration: underline !important;
+		color: #e60073;
+	}
+	
+	.box1-12::before{
+		content: '\2764';
+	}
+	
+	.box1-13::before{
+		content: '\2714';
+	}
+	
+	.box1-14::before{
+		content: '\26a1';
+		
+	}
+	
+	
+	
+	/* box1에서 움직이는 사진 밑에 동그라미 */
+	.carousel-indicators li{
+	background-color: red;
+	}
+	
+	@-webkit-keyframes glow {
+		from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;}
+		to {text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;}
+	}
+	
+	.box1-4:after{content:'\25Bf';}
+	
+	.box2{
+		position: relative;
+		width: 100%; height: 50px;
+	}
+	
+	.box2-0{
+	transform: translate(5%,50%);
+	display: inline-block;
+	width: 90%;
+	
+	}
+	
+	.box2-0 a{
+	color: white;
+	}
+	
+	.box2-0 a:hover{
+	color: white;
+	}
+
+	.box2-8{
+		display: inline;
+		float: right ;
+		width: 300px; 
+	}
+	
+	/*검색기능*/
+	form{
+		display: inline;
+	
+	}
+	
+	form.search input[type=text] {
+		/* padding: 10px;
+		float: left;
+		width: 80%; */
+		padding-left: 2%;
+		font-size: 17px;
+		border: 2px solid red;
+		height: 30px;
+		border-radius: 13px;
+		background-color: black;
+		
+	}
+	
+	.search button {
+		/* float: left; */
+		width: 40px;
+		height: 30px;
+		/* padding: 10px; */
+		background: black;
+		color: white;
+		font-size: 17px;
+		border: 2px solid red;
+		
+		cursor: pointer;
+	}
+	
+	.search button:hover {
+		background: red;
+	}
+	
+	.search::after {
+		content: "";
+		clear: both;
+		/* display: table; */
+	}
+	
+	/*검색기능끝*/
+	
+	.box3{
+		position: relative;
+		width: 100%; height: 600px;	
+	}
+	
+	.box4{
+		position: relative;
+		width: 100%; height: 50px;
+	}
+	
+	.box4-2{
+	margin-left: 45%;
+	
+	}
+	
+	.box4-2 a {
+		color: white;
+		float: left;
+		padding: 8px 16px;
+		text-decoration: none;
+		transition: background-color .3s;
+		border-radius: 20px;
+	}
+	
+	.box4-2 a.active {
+		background-color: #ff9999;
+		border-radius: 20px;
+		color: white;
+		
+	}
+	
+	.pagination a:hover:not(.active) {background-color: #ddd;}
+	
+	
+	
+	/* 이곳부터는 주로 공용에 쓰이는 css */
+	*		{ margin: 0;	padding : 0; }
+	.box0{
+	position: absolute;
+	background: black;
+	width: 100%; height: 145%;
+	}
+	
+	.public-line{
+	/* border: 1px solid mediumspringgreen; */
+	}
+	
+	.public-line2{
+	/* border: 1px solid mediumspringgreen; */
+	}
+	
+	.public-font{
+	color: aliceblue;
+	}
+	
+	.public-font2{
+	color: black;
+	font-size: 13px;
+	}
+	
+	/* (가로 가운데로 정렬하는방법) */
+	.carousel-inner{
+	width: 93%;
+	height: 355px;
+	left:7%; 
+	overflow: hidden;
+	/* transform: translate(-42%); */
+	}
+	
+	/* 불투명도 조절 0~1 */
+	.carousel-item>img{
+	opacity: 0.5;
+	}
+	
+	.public-box{
+	left: 50%;
+	display: inline-block;
+	width: 100px; height: 30px;
+	text-align: center;
+	border: 2px solid red;
+	border-radius: 11px;		
+	cursor: pointer;
+	}
+	
+	.public-box1{
+	width: 150px; height: 250px;
+	/* border: solid 1px white; */
+	display: inline-block;
+	margin: 40px 0px 0px 40px;
+	
+	}
+	
+	/* 이미지 흐릿하게 하기 */
+	.public-box1:hover .image {
+		opacity: 0.1;
+	}
+	
+	.public-box1:hover .public-box1-a1{
+	opacity: 1;
+	}
+	
+	.public-box1-a1 {
+	/* transition: .5s ease; */
+	opacity: 0;
+	position: absolute;	
+	transform: translate(0%, -300%);
+	text-align: center;
+	/* align-items: center;
+	justify-content: center; */
+	}
+	
+	.public-box1-a2{
+	width: 150px;
+	color: white;
+	font-size: 15px;
+	}
+	
+	.public-box1>.public-box3{
+	width: 150px;
+	border-radius: unset;
+	}
+	
+	.public-box2{
+	position: absolute;	
+	width: 1000px; height: 50px;
+	/* border: 1px solid white; */
+	margin-left: 60px;
+	color: #ff8080;
+	}
+	
+	.public-box:hover, .search input[type=text]:hover{
+	border: 2px solid red;
+	background: rgb(255, 0,0,.40);
+	}
+	
+	.inPocus{
+	outline: none;
+	}
+	
+	/* 이건 클릭시 없에는 용도 */
+	.public-hidden{
+	display: none;
+	padding: 6px 12px;
+	-webkit-animation: fadeEffect 1s;
+	animation: fadeEffect 1s;
+	}
+	
+	.public-displayNone{
+	display: none;
+	}
+	
+	img{
+	vertical-align: unset;
+	}
+	/* 상단 네비바 faid in out 효과 */
+	@-webkit-keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
+	}
+	
+	@keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
+	}
+	
+	#public-box4 {
+	position: fixed; 
+	display: none;
+	width: 70%; 
+	height: 60%; 
+	top: 15%; 
+	left: 4%;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 2; 
+	cursor: pointer; 
+	}
