@@ -2,20 +2,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
            pageEncoding="UTF-8"%>
            
-<div class="box1 public-line public-font">
-<div class="box1-1"><i>HORROR-Q</i><br></div>
+
+	<div class="box1 public-line public-font">
+		<div class="box1-1"><i>HORROR-Q</i><br></div>
 			<div class="box1-2" style="vertical-align:80% ">
 		 		<button type="button" class="btn btn-danger box1-3"><b>Language</b></button>
 			 		<c:if test="${user eq null}">
 						<a href="<%=request.getContextPath()%>/signin"><button type="button" class="btn btn-danger box1-3"><b>Login</b></button></a>
 					</c:if>
-					
 					<c:if test="${user ne null}">
 						<button type="button" class="btn btn-danger" onclick="myInFo()"><b class="box1-4">${user.name}</b></button>			
 					</c:if>
+				
 			</div>	
 			
-			<div class="box1-5 public-line2 public-displayNone" id="box1-5">
+			<div class="box1-5 public-line2 public-displayNone" id="loginBox">
 				<div class="box1-6 public-line2"><img src="<%=request.getContextPath()%>/resources/img/icon.png"></div>
 					<div class="box1-7">
 					<div class="box1-8 public-line2">
@@ -26,7 +27,7 @@
 							
 								<div class="box1-9b"><img src="<%=request.getContextPath()%>/resources/img/porfile.png" width="34px" height="34px" onclick="pfOpen()"></div>
 								
-									<div id="box1-9c" class="box1-9c">
+									<div id="profilePhoto" class="box1-9c">
 										<a href="javascript:void(0)" class="closebtn" onclick="pfclose()">&times;</a>
 										<!-- 프로필 사진 임시 업로드 하는곳 -->
 										<div class="box1-9d"><img src="<%=request.getContextPath()%>/resources/upload${user.profile}" width="100px" height="110px"></div>
@@ -102,7 +103,4 @@
 					<span class="carousel-control-next-icon"></span>
 				</a>
 			</div>
-			</div>
-			
-			
-			
+			</div><!-- box1 END -->

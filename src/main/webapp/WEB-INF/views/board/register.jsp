@@ -3,7 +3,7 @@
            pageEncoding="UTF-8"%>
 <html>
 <head>
-<jsp:include page="/WEB-INF/views/common/header.jsp"></jsp:include>
+<jsp:include page="/WEB-INF/views/common/listHeader.jsp"></jsp:include>
 
 	<title>리스트</title>
 </head>
@@ -11,6 +11,7 @@
 <jsp:include page="/WEB-INF/views/common/nav.jsp"></jsp:include>
 <div class="container-fluid" style="margin-top:80px;">
 
+<!--  test -->
 <form action="<%=request.getContextPath()%>/board/register" method="post">
 	<div class="form-group">
 	  <label for="usr">제목</label>

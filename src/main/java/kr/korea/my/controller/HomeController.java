@@ -54,6 +54,13 @@ import kr.korea.my.vo.MemberVO;
 		
 				return "home";
 			}
+//		
+//		@RequestMapping(value = "/test", method = RequestMethod.GET)
+//		public String test(Model model){
+//			logger.info("메인페이지");
+//	
+//			return "common/profile";
+//		}
 		/**
 		 * 회원 가입 하는 곳 
 		 * **/

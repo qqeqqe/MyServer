@@ -43,12 +43,14 @@ class="kr.korea.my.intercepter.UnauthInterceptor"></beans:bean>
 	</beans:bean>
 	
 	
+	<!-- 로그인시 이용 가능한 기능-->
 	<interceptors>
 		<interceptor>  
-		  <mapping path="/signin"/> 
+		  <mapping path="/signin"/>  
 		  <beans:ref bean="loginInterceptor"/>
 		</interceptor>
 		
+	<!-- 회원이 아니면 통제되는 곳 -->
 		<interceptor>  
 		  <mapping path="/board/modify"/> 
 		  <mapping path="/board/delete"/>

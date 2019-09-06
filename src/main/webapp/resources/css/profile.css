@@ -1,0 +1,170 @@
+.test{
+	width: 100%; height: 100%;
+	position: absolute;
+	background-color: black;
+}
+
+.profileBox1-5{
+	position: absolute;
+	left: 73%; top: 7%;
+	width: 330px; height: 230px;
+	z-index: 1;
+}
+
+.profileBox1-6{
+	padding-left: 86%;
+	height: 10px;
+	opacity: 0.9;
+}
+
+.profileBox1-7{
+	width: 100%; height: 175px;
+	background-color: rgb(255,255,255,0.9);
+}
+
+.profileBox1-9{
+	float: left;
+	width: 120px;
+	height: 140px;
+}
+
+.profileBox1-9a{
+	margin: 10px 5px 5px 10px;
+	width: 100px;
+	height: 110px;
+	border: 1px solid rgb(217,217,217,1)
+}
+
+.profileBox1-9b{
+	position: absolute;
+	left: 85px;
+	transform: translate(0px,-25px);
+	cursor: pointer;
+}
+
+/*사진 수정 눌렀을대 나오는 효과들*/
+.profileBox1-9c {
+		height: 165%;
+		width: 275%;
+		display: none;
+		position: relative;
+		z-index: 2;
+		background-color: rgba(115,115,115, 0.9);
+		transform: translate(0px,60px);
+	}
+
+	/*컨탠츠 안 박스설정*/
+.profileBox1-9d{
+		border: 1px ghostwhite solid;
+		width: 100px;
+		height: 110px;
+		top: 12%;
+		position: relative;
+		left: 5%;
+		float: left;
+	}
+	
+.profileBox1-9e{
+		position: relative;
+		left: 10%; top: 10%
+	}
+
+.profileBox1-9f{
+		position: relative;
+		top: 22%; left: 17px;		
+	}
+	
+	/*컨탠츠 안에 확인버튼*/
+.profileBox1-9g {
+		text-decoration: none;
+		font-size: 16px;
+		transition: 0.3s;
+	}
+
+	/*X 버튼*/
+.closebtn {
+		position: absolute;
+		right: 10px; top: -5px;
+		font-size: 30px;
+		z-index: 3;
+		text-decoration: none;
+		color: #ddd;
+	}
+
+	.closebtn:hover{
+		text-decoration: none;
+	}
+
+	@media screen and (max-height: 450px) {
+.profileBox1-9g {font-size: 20px}
+		.closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+		}
+	}
+
+.profileBox1-10{
+		float: left;
+		width: 205px;
+		height: 140px;
+		padding: 5px 0 0 5px;
+	}
+	
+	.profileBox1-10a{
+	display: inline-block;
+	width: 130px;
+	}
+	
+	.profileBox1-10b{
+	display: inline-block;
+	width: 60px;
+	border: 1px solid #bfbfbf;
+	cursor: pointer;
+	padding-left: 2px;
+	}
+	
+	.profileBox1-10d{
+		width: 90px;
+		display: inline-block;
+	}
+	.profileBox1-10e{
+		display: inline-block;
+		width: 100px;
+	}
+	
+	.profileBox1-11{
+	padding-left: 9px;
+	}
+	
+	.profileBox1-12, .profileBox1-13, .profileBox1-14{
+		border: #ff4da6 1px solid;
+		display: inline-block;
+		cursor: pointer;
+		width: 100px;
+		height: 22px;
+		text-align: center;
+	}
+	
+	.profileBox1-12:hover, .profileBox1-13:hover, .profileBox1-14:hover{
+		text-decoration: underline !important;
+		color: #e60073;
+	}
+	
+	.profileBox1-12::before{
+		content: '\2764';
+	}
+	
+	.profileBox1-13::before{
+		content: '\2714';
+	}
+	
+	.profileBox1-14::before{
+		content: '\26a1';
+		
+	}
+	
+	.profile-font1{
+	color: black;
+	font-size: 13px;
+	}
