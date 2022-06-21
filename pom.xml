@@ -131,7 +131,7 @@
 <!-- mysql-connector-java 추가 -->
 <dependency><groupId>mysql</groupId> 
 <artifactId>mysql-connector-java</artifactId> 
-<version>8.0.11</version> 
+<version>8.0.28</version> 
 </dependency>
 <!-- 여기서 버전 8.0.11은 해당 버전에 따라 바꿔야 한다. -->
 <!-- spring-jdbc 추가 -->
